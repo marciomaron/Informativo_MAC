@@ -51,6 +51,7 @@
             height: 100% !important;
             width: 100% !important;
             font-family: 'Inter', sans-serif !important;
+            color: #000000;
         }
 
         /* What it does: Stops email clients resizing small text. */
@@ -92,7 +93,6 @@
         /* What it does: Prevents Windows 10 Mail from underlining links despite inline CSS. Styles for underlined links should be inline. */
         a {
             text-decoration: underline;
-            color: #000000 !important;
         }
 
         /* What it does: Uses a better rendering method when resizing images in IE. */
@@ -148,6 +148,9 @@
         @media only screen and (min-device-width: 414px) {
             u ~ div .email-container {
                 min-width: 414px !important;
+            }
+            h1 {
+                font-size: 44px;
             }
         }
 
@@ -205,13 +208,59 @@
             .email-container p {
                 font-size: 16px !important;
             }
+            .email-container, .email-container * {
+                font-size: inherit;
+                max-font-size: 44px !important;
+            }
         }
+        }
+        
+        /* Dark Mode Styles : BEGIN */
+
+        @media (prefers-color-scheme: dark) {
+            .email-bg {
+                background: #111111 !important;
+            }
+            .darkmode-bg {
+                background: #222222 !important;
+            }
+            h1,
+            h2,
+            h3,
+            p,
+            li,
+            a,
+            .darkmode-text,
+            .email-container a:not([class]) {
+                color: #F7F7F9 !important;
+            }
+            a {
+                color: #ffffff !important;
+            }
+            td.button-td-primary,
+            td.button-td-primary a {
+                background: #ffffff !important;
+                border-color: #ffffff !important;
+                color: #000000 !important;
+            }
+            .footer td {
+                color: #aaaaaa !important;
+            }
+            .darkmode-fullbleed-bg {
+                background-color: #0F3016 !important;
+            }
         }
         /* Dark Mode Styles : END */
 
         /* Styles do informativo */
 
 
+    </style>
+
+    <style>
+        a {
+            color: #000000;
+        }
     </style>
     <!-- Progressive Enhancements : END -->
 
@@ -244,20 +293,34 @@
         <!-- Preview Text Spacing Hack : END -->
 
         <!-- Email Body : BEGIN -->
-        <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="600" style="margin: auto !important" class="email-container">
-            <!-- Email Header : BEGIN -->
+
+
+        <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="600" style="margin: auto !important; background-color: #ffffff;" class="email-container">
+            
+            <div>
+                    
+            <!--[if gte mso 9]>
+                        <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:600px;height:600px;">
+                        <v:fill type="frame" src="https://marciomaron.github.io/Informativo_MAC/sucro2.jpg" aspect-ratio="true"/>
+                         <v:textbox style="mso-fit-shape-to-text:true" inset="0,0,0,0">
+                    <![endif]-->
+            <div style="height: 600px;">
+            <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="600" style="margin: auto !important;" class="email-container">
+
             <tr>
+                
+
                 <td background="https://marciomaron.github.io/Informativo_MAC/sucro2.jpg" style="background-repeat: no-repeat; background-position: center; background-size: cover;">
                     <table class="transparent-bg" width="100%" cellspacing="0" cellpadding="0" style="background-color: rgba(255, 255, 255, 0.6)">
                         <tr>
-                            <td style="padding-left: 22px; padding-right: 22px;"> 
+                            <td> 
                                 <table width="100%" cellspacing="0" cellpadding="0" style="font-size: 16px !important;">
                                     <tr>
-                                        <td>
-                                            <p><a href="">Ver no navegador</a></p>
+                                        <td style="padding-left: 22px;">
+                                            <p><a href="*|ARCHIVE|*" style="color: #000000 !important;">Ver no navegador</a></p>
                                         </td>
-                                        <td style="text-align: right;">
-                                            <p><a href="">Sair da lista</a></p>
+                                        <td style="text-align: right; color: #000000; padding-right: 22px;">
+                                            <p><a href="*|UNSUB|*" style="color: #000000 !important;">Sair da lista</a></p>
                                         </td>
                                     </tr>
                                 </table>
@@ -265,62 +328,74 @@
                         </tr>
                         <tr>
                             <td style="padding-top: 40px; padding-left: 22px; padding-right: 22px;"> 
-                                <h4 style="color: #000000; font-size: 26px; font-weight: 400;">Dias de Souza</h3>
+                                <h4 style="font-size: 26px; font-weight: 400; color: #000000 !important;">Dias de Souza</h4>
                             </td>
                         </tr>
                         <tr>
-                            <td style="padding-top: 0px; padding-left: 22px; padding-right: 22px; line-height: 6px;"> 
-                                <h1 style="color: #000000; font-size: 64px; font-weight: 500;">Informativo</h1>
-                                <h2 style="color:#000000; font-size: 28px; font-weight: 300;">Sucroenergético</h2>
+                            <td style="padding-top: 0px; padding-left: 22px; padding-right: 22px;"> 
+                                <h1 style="font-size: 52px; font-weight: 600; color: #000000 !important;">Informativo</h1>
                             </td>
                         </tr>
                         <tr>
-                            <td style="padding-top: 106px; padding-left: 22px; padding-right: 22px;">
-                                <p style="color: #000000;">01/2024</p>
+                            <td style="padding-top: 0px; padding-left: 22px; padding-right: 22px;" mc:edit="nome_do_informativo">
+                                <h2 style="font-size: 28px; font-weight: 300; color: #000000 !important; margin-top: -48px;">Sucroenergético</h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding-top: 106px; padding-left: 22px; padding-right: 22px;" mc:edit="$data_do_informativo">
+                                <p style="color: #000000 !important;">01/2024</p>
                             </td>
                         </tr>
                     </table>
                 </td>
             </tr>
-            <!-- Email Header : END -->
+            </table>
+            </div>
+            <!--[if gte mso 9]>
+            </v:textbox>
+            </v:rect>
+            <![endif]-->
+            </div>
 
-            <!-- Hero Image, Flush : BEGIN -->
-          
-            <!-- Hero Image, Flush : END -->
+
+        </table>
+
+        <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="600" style="margin: auto !important; background-color: #ffffff;" class="email-container">
+
 
             <!-- 1 Column Text : BEGIN -->
             <tr>
                 <td style="background-color: #ffffff;" class="darkmode-bg">
                     <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                         <tr>
-                            <td style="width: 22px;">
+                            <td style="width: 22px; background-color: #ffffff;">
                             </td>
-                            <td style="padding: 0px; padding-top: 44px; font-family: 'Inter',sans-serif; font-size: 16px; line-height: 20px; color: #000000; font-weight: 600; padding-bottom: 8px; border-bottom: 1px solid #000000;">
+                            <td style="background-color: #ffffff; padding: 0px; padding-top: 44px; font-family: 'Inter',sans-serif; font-size: 16px; line-height: 20px; font-weight: 600; padding-bottom: 8px; border-bottom: 1px solid #000000;" class="darkmode-text">
                                 <p style="margin: 0;">Destaques</p>
                             </td>
-                            <td style="padding: 0px; padding-top: 44px;font-family: 'Inter',sans-serif; font-size: 16px; line-height: 20px; color: #000000; font-weight: 400; text-align: right; padding-bottom: 8px; border-bottom: 1px solid #000000;">
+                            <td style="background-color: #ffffff; padding: 0px; padding-top: 44px;font-family: 'Inter',sans-serif; font-size: 16px; line-height: 20px; font-weight: 400; text-align: right; padding-bottom: 8px; border-bottom: 1px solid #000000;" mc:edit="link_informativo_completo">
                                 <a href="" style="margin: 0;">Informativo completo</a>
                             </td>
-                            <td style="width: 22px;">
+                            <td style="width: 22px; background-color: #ffffff;">
                             </td>
                         </tr>
                     </table>
                     <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                         <tr>
-                            <td style="padding: 22px; padding-bottom:11px;">
-                                <h3 style="color: #000000; font-weight:500; font-size: 16px;">Plenário do STF declara a inconstitucionalidade dos atos administrativos do Fisco e do TIT paulista, que suprimiam créditos de ICMS relativos a mercadorias oriundas das ZFM</h3>
+                            <td style="padding: 22px; padding-bottom:11px;" mc:edit="$destaque1">
+                                <h3 style="font-weight:500; font-size: 16px;">Plenário do STF declara a inconstitucionalidade dos atos administrativos do Fisco e do TIT paulista, que suprimiam créditos de ICMS relativos a mercadorias oriundas das ZFM</h3>
                                 <p style="margin-top: -12px;"><a href="">Ler mais</a></p>
                             </td>
                         </tr>
                         <tr>
-                            <td style="padding: 22px; padding-top: 0px;  padding-bottom:11px;">
-                                <h3 style="color: #000000; font-weight:500; font-size: 16px;">STJ julgará repetitivo sobre PIS/COFINS na base do ICMS</h3>
+                            <td style="padding: 22px; padding-top: 0px;  padding-bottom:11px;" mc:edit="$destaque2">
+                                <h3 style="font-weight:500; font-size: 16px;">STJ julgará repetitivo sobre PIS/COFINS na base do ICMS</h3>
                                 <p style="margin-top: -12px;"><a href="">Ler mais</a></p>
                             </td>
                         </tr>
                         <tr>
-                            <td style="padding: 22px; padding-top: 0px;  padding-bottom:11px;">
-                                <h3 style="color: #000000; font-weight:500; font-size: 16px;">CARF adotará novo regimento em 2024</h3>
+                            <td style="padding: 22px; padding-top: 0px;  padding-bottom:11px;" mc:edit="$destaque 3">
+                                <h3 style="font-weight:500; font-size: 16px;">CARF adotará novo regimento em 2024</h3>
                                 <p style="margin-top: -12px;"><a href="">Ler mais</a></p>
                             </td>
                         </tr>
@@ -331,31 +406,31 @@
 
         <!-- Second 1 Column Text : BEGIN -->
             <tr>
-                <td style="background-color: #ffffff;" class="darkmode-bg">
+                <td class="darkmode-bg">
                     <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                         <tr>
                             <td style="width: 22px;">
                             </td>
-                            <td style="padding: 0px; padding-top: 44px;font-family: 'Inter',sans-serif; font-size: 16px; line-height: 20px; color: #000000; font-weight: 600; padding-bottom: 8px; border-bottom: 1px solid #000000;">
+                            <td style="padding: 0px; padding-top: 44px;font-family: 'Inter',sans-serif; font-size: 16px; line-height: 20px; font-weight: 600; padding-bottom: 8px; border-bottom: 1px solid #000000;">
                                 <p style="margin: 0;">Outras notícias</p>
                             </td>
-                            <td style="padding: 0px; padding-top: 44px;font-family: 'Inter',sans-serif; font-size: 16px; line-height: 20px; color: #000000; font-weight: 400; text-align: right; padding-bottom: 8px; border-bottom: 1px solid #000000;">
+                            <td style="padding: 0px; padding-top: 44px;font-family: 'Inter',sans-serif; font-size: 16px; line-height: 20px; font-weight: 400; text-align: right; padding-bottom: 8px; border-bottom: 1px solid #000000;">
                                 <a href="" style="margin: 0;"></a>
                             </td>
                             <td style="width: 22px;">
                             </td>
                         </tr>
                     </table>
-                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" mc:edit="$outras_noticias">
                         <tr>
-                            <td style="padding: 22px; padding-bottom: 0px; color: #000000";>
+                            <td style="padding: 22px; padding-bottom: 0px;">
                                 <h3 style="color: #000000; font-weight: 500; font-size: 16px;">Supremo Tribunal Federal</h3>
                                 <p style="padding-left: 22px;"><a href="">Plenário reconhece a inconstitucionalidade dos juros moratórios previstos no art. 1º-F da Lei n. 9.494/1997...</a></p>
                             </td>
                         </tr>
                         <tr>
-                            <td style="padding: 22px; padding-bottom: 0px; color: #000000">
-                                <h3 style="color: #000000; font-weight: 500; font-size: 16px;">Superior Tribunal de Justiça</h3>
+                            <td style="padding: 22px; padding-bottom: 0px;">
+                                <h3 style="font-weight: 500; font-size: 16px;">Superior Tribunal de Justiça</h3>
                                 <p style="font-weight: 400;">Primeira Seção</p>
                                 <p style="padding-left: 22px;"><a href="">Colegiado decide que o ICMS-ST não compõe a base de cálculo do PIS e da COFINS...</a></p>
                                 <p style="padding-left: 22px;"><a href="">Primeira Seção examina submeter ao rito dos recursos repetitivos novas discussões tributárias...</a></p><br>
@@ -370,7 +445,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <td style="padding: 22px; padding-bottom: 22px; color: #000000; font-weight: 500;">
+                            <td style="padding: 22px; padding-bottom: 22px; font-weight: 500;">
                                 <p><a href="">Leia a íntegra do informativo</a></p>
                             </td>
                         </tr>
@@ -381,15 +456,15 @@
 
         <!-- Third Column Text : BEGIN -->
             <tr>
-                <td style="background-color: #ffffff;" class="darkmode-bg">
+                <td class="darkmode-bg">
                     <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                         <tr>
                             <td style="width: 22px;">
                             </td>
-                            <td style="padding: 0px; padding-top: 38px;font-family: 'Inter',sans-serif; font-size: 16px; line-height: 20px; color: #000000; font-weight: 600; padding-bottom: 8px; border-bottom: 1px solid #000000;">
+                            <td style="padding: 0px; padding-top: 38px;font-family: 'Inter',sans-serif; font-size: 16px; line-height: 20px; font-weight: 600; padding-bottom: 8px; border-bottom: 1px solid #000000;">
                                 <p style="margin: 0;">Mais informações</p>
                             </td>
-                            <td style="padding: 0px; padding-top: 44px;font-family: 'Inter',sans-serif; font-size: 16px; line-height: 20px; color: #000000; font-weight: 400; text-align: right; padding-bottom: 8px; border-bottom: 1px solid #000000;">
+                            <td style="padding: 0px; padding-top: 44px;font-family: 'Inter',sans-serif; font-size: 16px; line-height: 20px; font-weight: 400; text-align: right; padding-bottom: 8px; border-bottom: 1px solid #000000;">
                                 <a href="" style="margin: 0;"></a>
                             </td>
                             <td style="width: 22px;">
@@ -398,14 +473,14 @@
                     </table>
                     <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                         <tr>
-                            <td style="padding: 22px; padding-bottom:11px; color: #000000">
+                            <td style="padding: 22px; padding-bottom:11px;">
                                 <p>Para obter mais informações, entre em contato conosco. Nossas equipes terão prazer em prestar quaisquer esclarecimentos.</p>
                                 <br>
                                 <!-- Button : BEGIN -->
                                 <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" style="margin: auto;">
                                     <tr>
                                         <td class="button-td button-td-primary" style="border-radius: 0px; background: #000000; font-family: 'Inter',sans-serif; width:340px; text-align: center;">
-                                            <a class="button-a button-a-primary" href="" style="background: #000000; border: 1px solid #000000; ffont-family: 'Inter',sans-serif; font-size: 15px; line-height: 15px; text-decoration: none; padding: 13px 17px; color: #ffffff !important; display: block; border-radius: 4px;">Fale conosco</a>
+                                            <a class="button-a button-a-primary" href="" style="background: #000000; border: 1px solid #000000; ffont-family: 'Inter',sans-serif; font-size: 15px; line-height: 15px; text-decoration: none; padding: 13px 17px; color: #ffffff; display: block; border-radius: 4px;">Fale conosco</a>
                                         </td>
                                     </tr>
                                 </table>
@@ -435,7 +510,7 @@
                                     <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                                         <tr>
                                             <td style="padding: 32px; padding-left: 44px; padding-right: 44px; text-align: left; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #ffffff;">
-                                                <p style="margin: 0;">Você recebeu esse Informativo porque se cadastrou em nosso site ou é nosso cliente. Caso deseje, é possível <a href="" style="color: #ffffff !important;">alterar as suas opções de envio.</a></p>
+                                                <p style="margin: 0;">Você recebeu esse Informativo porque se cadastrou em nosso site ou é nosso cliente. Caso deseje, é possível <a href="*|UNSUB|*" style="color: #ffffff !important;">alterar as suas opções de envio.</a></p>
                                                 <p> O Informativo é uma produção conjunta do Dias de Souza Advogados Associados e da AdvocaciaDias de Souza. Todos os direitos relacionados são reservados. A cópia é permitida, desde que citada a fonte. <a href="" style="color: #ffffff !important;">Leia nossas políticas de privacidade.</a></p>
                                             </td>
                                         </tr>
@@ -454,16 +529,16 @@
                             <td style="text-align: center; padding-bottom: 42px;">
                                 <p><img src="https://marciomaron.github.io/Informativo_MAC/logodsa2.png" alt="DSA" height="80" width="200"></p>
                                 <p><a href="" style="color: #ffffff !important;">Instagram</a> - <a href="" style="color: #ffffff !important;">Linkedin</a></p>
-                                <p>Av. Brasil, 1575 - Jardim América<br>CEP: 01431-001 - São Paulo - SP</p>
-                                <p><a href="" style="color: #ffffff !important;">www.dsa.com.br</a><br>(+55 11) 3069-4277</p>
+                                <p style="color: #ffffff !important;">Av. Brasil, 1575 - Jardim América<br>CEP: 01431-001 - São Paulo - SP</p>
+                                <p style="color: #ffffff !important;"><a href="" style="color: #ffffff !important;">www.dsa.com.br</a><br>(+55 11) 3069-4277</p>
                             </td>
                         </tr>
                         <tr>
                             <td style="text-align: center; padding-bottom: 32px;">
                                 <p><img src="https://marciomaron.github.io/Informativo_MAC/logoadvds2.png" alt="ADVDS" height="80" width="200"></p>
                                 <p><a href="" style="color: #ffffff !important;">Instagram</a> - <a href="" style="color: #ffffff !important;">Linkedin</a></p>
-                                <p>SHIS QI 15 Conj. 2 Casa 1 - Lago Sul<br>CEP: 71635-220 - Brasília - DF</p>
-                                <p><a href="" style="color: #ffffff !important;">www.dsa.com.br</a><br>(+55 61) 3329-9400</p>
+                                <p style="color: #ffffff !important;">SHIS QI 15 Conj. 2 Casa 1 - Lago Sul<br>CEP: 71635-220 - Brasília - DF</p>
+                                <p style="color: #ffffff !important;"><a href="" style="color: #ffffff !important;">www.dsa.com.br</a><br>(+55 61) 3329-9400</p>
                             </td>
                         </tr>
                     </table>
