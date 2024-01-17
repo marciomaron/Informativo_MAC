@@ -31,6 +31,15 @@
         </style>
     <![endif]-->
 
+    <!--[if gte mso 9]>
+         <style>
+            .intro {
+                padding-top: 52px !important;
+                height: 142px !important;
+            }
+        </style>                   
+    <![endif]-->
+
     <!-- All other clients get the webfont reference; some will render the font and others will silently fail to the fallbacks. More on that here: https://web.archive.org/web/20190717120616/http://stylecampaign.com/blog/2015/02/webfont-support-in-email/ -->
     <!--[if !mso]><!-->
     <!-- insert web font reference, eg: <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'> -->
@@ -53,7 +62,7 @@
             font-family: 'Inter', sans-serif !important;
             color: #000000;
         }
-
+    
         /* What it does: Stops email clients resizing small text. */
         * {
             -ms-text-size-adjust: 100%;
@@ -261,6 +270,12 @@
         a {
             color: #000000;
         }
+        h5 {
+            font-weight:500;
+            font-size: 16px;
+            color: #000000;
+        }
+
     </style>
     <!-- Progressive Enhancements : END -->
 
@@ -274,7 +289,7 @@
 <body width="100%" style="margin: 0; padding: 0 !important; mso-line-height-rule: exactly; background-color: #FFFFF;" class="email-bg">
   <center role="article" aria-roledescription="email" lang="en" style="width: 100%; background-color: #FFFFFF;" class="email-bg">
     <!--[if mso | IE]>
-    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #F2F2F2;" class="email-bg">
+    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #FFFFFF;" class="email-bg">
     <tr>
     <td>
     <![endif]-->
@@ -300,9 +315,9 @@
             <div>
                     
             <!--[if gte mso 9]>
-                        <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:600px;height:600px;">
+                        <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:600px; height:492px;">
                         <v:fill type="frame" src="https://marciomaron.github.io/Informativo_MAC/sucro3.jpg" aspect-ratio="true"/>
-                         <v:textbox style="mso-fit-shape-to-text:true" inset="0,0,0,0">
+                        
                     <![endif]-->
 
             <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="600" style="margin: auto !important;" class="email-container">
@@ -311,15 +326,15 @@
                 
 
                 <td background="https://marciomaron.github.io/Informativo_MAC/sucro3.jpg" style="background-repeat: no-repeat; background-position: center; background-size: cover;">
-                    <table class="transparent-bg" width="100%" cellspacing="0" cellpadding="0" style="background-color: rgba(255, 255, 255, 0.6)">
+                    <table class="transparent-bg" width="100%" cellspacing="0" cellpadding="0" style="background-color: rgba(255, 255, 255, 0.0)">
                         <tr>
                             <td> 
                                 <table width="100%" cellspacing="0" cellpadding="0" style="font-size: 16px !important;">
                                     <tr>
-                                        <td style="padding-left: 22px;">
+                                        <td style="padding-left: 22px; padding-top: 8px;">
                                             <p><a href="*|ARCHIVE|*" style="color: #000000 !important;">Ver no navegador</a></p>
                                         </td>
-                                        <td style="text-align: right; color: #000000; padding-right: 22px;">
+                                        <td style="text-align: right; color: #000000; padding-right: 22px; padding-top: 8px;">
                                             <p><a href="*|UNSUB|*" style="color: #000000 !important;">Sair da lista</a></p>
                                         </td>
                                     </tr>
@@ -327,7 +342,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <td style="padding-top: 40px; padding-left: 22px; padding-right: 22px;"> 
+                            <td style="padding-top: 32px; padding-left: 22px; padding-right: 22px;" class="intro"> 
                                 <h4 style="font-size: 26px; font-weight: 400; color: #000000 !important;">Dias de Souza</h4>
                             </td>
                         </tr>
@@ -342,7 +357,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <td style="padding-top: 106px; padding-left: 22px; padding-right: 22px;" mc:edit="$data_do_informativo">
+                            <td style="padding-top: 106px; padding-left: 22px; padding-right: 22px;" mc:edit="data_do_informativo">
                                 <p style="color: #000000 !important;">01/2024</p>
                             </td>
                         </tr>
@@ -381,21 +396,31 @@
                     </table>
                     <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                         <tr>
-                            <td style="padding: 22px; padding-bottom:11px;" mc:edit="$destaque1">
-                                <h3 style="font-weight:500; font-size: 16px;">Plenário do STF declara a inconstitucionalidade dos atos administrativos do Fisco e do TIT paulista, que suprimiam créditos de ICMS relativos a mercadorias oriundas das ZFM</h3>
-                                <p style="margin-top: -12px;"><a href="">Ler mais</a></p>
+                            <td style="width: 22px; background-color: #ffffff;">
                             </td>
-                        </tr>
-                        <tr>
-                            <td style="padding: 22px; padding-top: 0px;  padding-bottom:11px;" mc:edit="$destaque2">
-                                <h3 style="font-weight:500; font-size: 16px;">STJ julgará repetitivo sobre PIS/COFINS na base do ICMS</h3>
-                                <p style="margin-top: -12px;"><a href="">Ler mais</a></p>
+                            <td>
+                                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" mc:edit="destaques">
+                                    <tr>
+                                        <td style="padding-bottom:11px;">
+                                            <h5 style="font-weight:500; font-size: 16px;">Plenário do STF declara a inconstitucionalidade dos atos administrativos do Fisco e do TIT paulista, que suprimiam créditos de ICMS relativos a mercadorias oriundas das ZFM</h5>
+                                            <p style="margin-top: -12px;"><a href="">Ler mais</a></p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding-top: 0px;  padding-bottom:11px;">
+                                            <h5 style="font-weight:500; font-size: 16px;">STJ julgará repetitivo sobre PIS/COFINS na base do ICMS</h5>
+                                            <p style="margin-top: -12px;"><a href="">Ler mais</a></p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding-top: 0px;  padding-bottom:11px;">
+                                            <h5 style="font-weight:500; font-size: 16px;">CARF adotará novo regimento em 2024</h5>
+                                            <p style="margin-top: -12px;"><a href="">Ler mais</a></p>
+                                        </td>
+                                    </tr>
+                                </table>
                             </td>
-                        </tr>
-                        <tr>
-                            <td style="padding: 22px; padding-top: 0px;  padding-bottom:11px;" mc:edit="$destaque 3">
-                                <h3 style="font-weight:500; font-size: 16px;">CARF adotará novo regimento em 2024</h3>
-                                <p style="margin-top: -12px;"><a href="">Ler mais</a></p>
+                            <td style="width: 22px; background-color: #ffffff;">
                             </td>
                         </tr>
                     </table>
@@ -410,44 +435,58 @@
                         <tr>
                             <td style="width: 22px;">
                             </td>
-                            <td style="padding: 0px; padding-top: 44px;font-family: 'Inter',sans-serif; font-size: 16px; line-height: 20px; font-weight: 600; padding-bottom: 8px; border-bottom: 1px solid #000000;">
-                                <p style="margin: 0;">Outras notícias</p>
-                            </td>
-                            <td style="padding: 0px; padding-top: 44px;font-family: 'Inter',sans-serif; font-size: 16px; line-height: 20px; font-weight: 400; text-align: right; padding-bottom: 8px; border-bottom: 1px solid #000000;">
-                                <a href="" style="margin: 0;"></a>
+                            <td>
+                                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                    <tr>
+                                        <td style="padding: 0px; padding-top: 44px; font-family: 'Inter',sans-serif; font-size: 16px; line-height: 20px; font-weight: 600; padding-bottom: 8px; border-bottom: 1px solid #000000;">
+                                            <p style="margin: 0;">Outras notícias</p>
+                                        </td>
+                                        <td style="padding: 0px; padding-top: 44px; font-family: 'Inter',sans-serif; font-size: 16px; line-height: 20px; font-weight: 400; text-align: right; padding-bottom: 8px; border-bottom: 1px solid #000000;">
+                                        <a href="" style="margin: 0;"></a>
+                                        </td>
+                                    </tr>
                             </td>
                             <td style="width: 22px;">
                             </td>
                         </tr>
                     </table>
-                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" mc:edit="$outras_noticias">
+
+                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                         <tr>
-                            <td style="padding: 22px; padding-bottom: 0px;">
-                                <h3 style="color: #000000; font-weight: 500; font-size: 16px;">Supremo Tribunal Federal</h3>
-                                <p style="padding-left: 22px;"><a href="">Plenário reconhece a inconstitucionalidade dos juros moratórios previstos no art. 1º-F da Lei n. 9.494/1997...</a></p>
+                            <td style="width: 22px; background-color: #ffffff;">
                             </td>
-                        </tr>
-                        <tr>
-                            <td style="padding: 22px; padding-bottom: 0px;">
-                                <h3 style="font-weight: 500; font-size: 16px;">Superior Tribunal de Justiça</h3>
-                                <p style="font-weight: 400;">Primeira Seção</p>
-                                <p style="padding-left: 22px;"><a href="">Colegiado decide que o ICMS-ST não compõe a base de cálculo do PIS e da COFINS...</a></p>
-                                <p style="padding-left: 22px;"><a href="">Primeira Seção examina submeter ao rito dos recursos repetitivos novas discussões tributárias...</a></p><br>
-                                <p style="font-weight: 400;">Primeira Turma</p>
-                                <p style="padding-left: 22px;"><a href="">Colegiado decide que o ICMS-ST não compõe a base de cálculo do PIS e da COFINS...</a></p>
-                                <p style="padding-left: 22px;"><a href="">Primeira Turma define a impossibilidade de dedução da base de cálculo do IRPJ/CSLL dos valores pagos a título de gratificações e participação nos lucros ou resultados a diretores, executivos e administradores...</a></p><br>
-                                <p style="font-weight: 400;">Segunda Turma</p>
-                                <p style="padding-left: 22px;"><a href="">Colegiado decide que o ICMS-ST não compõe a base de cálculo do PIS e da COFINS...</a></p>
-                                <p style="padding-left: 22px;"><a href="">Segunda Turma autoriza a incidência de IRPJ, CSLL, PIS e COFINS sobre os valores das reduções de multas e juros no âmbito do PERT...</a></p>
-                                <p style="padding-left: 22px;"><a href="">Segunda Turma autoriza a incidência de PIS e COFINS sobre receitas financeiras das reservas técnicas das seguradoras...</a></p><br>
-                                            
+                            <td>
+                                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" mc:edit="outras_noticias">
+                                    <tr>
+                                        <td style="padding-bottom: 0px;">
+                                            <h5 style="color: #000000; font-weight: 500; font-size: 16px;">Supremo Tribunal Federal</h5>
+                                            <p style="padding-left: 22px;"><a href="">Plenário reconhece a inconstitucionalidade dos juros moratórios previstos no art. 1º-F da Lei n. 9.494/1997...</a></p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding-bottom: 0px;">
+                                            <h5 style="font-weight: 500; font-size: 16px;">Superior Tribunal de Justiça</h5>
+                                            <p style="font-weight: 400;">Primeira Seção</p>
+                                            <p style="padding-left: 22px;"><a href="">Colegiado decide que o ICMS-ST não compõe a base de cálculo do PIS e da COFINS...</a></p>
+                                            <p style="padding-left: 22px;"><a href="">Primeira Seção examina submeter ao rito dos recursos repetitivos novas discussões tributárias...</a></p><br>
+                                            <p style="font-weight: 400;">Primeira Turma</p>
+                                            <p style="padding-left: 22px;"><a href="">Colegiado decide que o ICMS-ST não compõe a base de cálculo do PIS e da COFINS...</a></p>
+                                            <p style="padding-left: 22px;"><a href="">Primeira Turma define a impossibilidade de dedução da base de cálculo do IRPJ/CSLL dos valores pagos a título de gratificações e participação nos lucros ou resultados a diretores, executivos e administradores...</a></p><br>
+                                            <p style="font-weight: 400;">Segunda Turma</p>
+                                            <p style="padding-left: 22px;"><a href="">Colegiado decide que o ICMS-ST não compõe a base de cálculo do PIS e da COFINS...</a></p>
+                                            <p style="padding-left: 22px;"><a href="">Segunda Turma autoriza a incidência de IRPJ, CSLL, PIS e COFINS sobre os valores das reduções de multas e juros no âmbito do PERT...</a></p>
+                                            <p style="padding-left: 22px;"><a href="">Segunda Turma autoriza a incidência de PIS e COFINS sobre receitas financeiras das reservas técnicas das seguradoras...</a></p><br>
+                                                        
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding-bottom: 22px; font-weight: 500;" mc:edit="link_informativo_completo2">
+                                            <p><a href="">Leia a íntegra do informativo</a></p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            <td style="width: 22px; background-color: #ffffff;">
                             </td>
-                        </tr>
-                        <tr>
-                            <td style="padding: 22px; padding-bottom: 22px; font-weight: 500;">
-                                <p><a href="">Leia a íntegra do informativo</a></p>
-                            </td>
-                        </tr>
                     </table>
                 </td>
             </tr>
@@ -479,7 +518,7 @@
                                 <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" style="margin: auto;">
                                     <tr>
                                         <td class="button-td button-td-primary" style="border-radius: 0px; background: #000000; font-family: 'Inter',sans-serif; width:340px; text-align: center;">
-                                            <a class="button-a button-a-primary" href="" style="background: #000000; border: 1px solid #000000; ffont-family: 'Inter',sans-serif; font-size: 15px; line-height: 15px; text-decoration: none; padding: 13px 17px; color: #ffffff; display: block; border-radius: 4px;">Fale conosco</a>
+                                            <a class="button-a button-a-primary" href="mailto:dsa@dsa.com.br,advds@advds.com.br" style="background: #000000; border: 1px solid #000000; ffont-family: 'Inter',sans-serif; font-size: 15px; line-height: 15px; text-decoration: none; padding: 13px 17px; color: #ffffff; display: block; border-radius: 4px;">Fale conosco</a>
                                         </td>
                                     </tr>
                                 </table>
